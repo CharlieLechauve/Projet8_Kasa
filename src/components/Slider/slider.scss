@@ -1,0 +1,70 @@
+.slide {
+  position: relative;
+
+  height: 415px;
+  margin-bottom: 30px;
+
+  @media (max-width: 1024px) {
+    height: 255px;
+  }
+}
+
+.slider {
+  
+  & img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+
+  }
+
+  &__number {
+    position: absolute;
+    bottom: 24px;
+    right: 50%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+}
+
+.right-Arrow {
+  position: absolute;
+  background-image: url("../../assets/images/slider/arrowRight.svg");
+  top: 42%;
+  right: 2%;
+  z-index: 10;
+  width: 46px;
+  height: 79px;
+  cursor: pointer;
+
+  @media (max-width: 1024px) {
+    background-image: url("../../assets/images/slider/arrowRightMobile.svg");
+    top: 50%;
+    right:-3%;
+  }
+}
+
+.left-Arrow {
+  position: absolute;
+  background-image: url("../../assets/images/slider/arrowLeft.svg");
+  top: 42%;
+  left: 2%;
+  width: 46px;
+  height: 79px;
+  z-index: 10;
+  cursor: pointer;
+
+  @media (max-width: 1024px) {
+    background-image: url("../../assets/images/slider/arrowLeftMobile.svg");
+    top: 50%;
+    left: 2%
+
+  }
+}

@@ -1,0 +1,70 @@
+.collapse {
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    &-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--Red, #FF6060);
+        color: #FFF;
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 18px;
+
+        @media (max-width: 1024px) {
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            height: 32px;
+            width: 32px;
+            background-image: url("../../assets/images/collapse/arrow.svg");
+            transition: transform 0.3s ease;
+           
+        }
+
+        &.open:after {
+                transform: rotate(-180deg);
+            }
+    }
+
+    &-content {
+        overflow: hidden;
+        padding: 20px;
+        background-color: White;
+        color: black;
+        font-weight: 400;
+        font-size: 18px;
+
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        max-height: 0;
+
+        @media (max-width: 1024px) {
+            font-weight: 700;
+            font-size: 12px;
+        }
+    
+        p {
+            line-height: 22px;
+        }
+    
+    
+    }
+    
+    .hidden {
+        height: 0;
+        padding: 0 20px;
+        transition:  300ms ease-in-out, max-height 300ms ease-in-out;
+    }
+    
+    .animated {
+        max-height: 1000px;
+        transition: max-height 300ms ease-in-out, 300ms ease-in-out;
+    }
+
+}

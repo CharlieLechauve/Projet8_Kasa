@@ -1,0 +1,63 @@
+.errorContainer {
+    color: #ff6060;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 139px;
+    margin-bottom: 139px;
+    gap: 139px;
+
+    @media (max-width: 1024px) {
+        margin-top: 113px;
+        margin-bottom: 113px;
+        gap: 113px;
+
+    }
+
+    &__Number {
+        width: 597px;
+        height: 263px;
+        font-size: 288px;
+        font-weight: 700;
+
+        @media (max-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 198px;
+            height: 99px;
+            font-size: 96px;
+        }
+    }
+
+    &__Text {
+        font-size: 36px;
+        font-weight: 500;
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+            text-align: center;
+
+        }
+    }
+
+    &__Link {
+        font-size: 18px;
+        font-weight: 500;
+        color: #FF6060;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration-line: underline;
+        }
+    }
+
+}

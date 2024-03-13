@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  height: 209px;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 28px;
+  background: #000;
+
+  @media (max-width: 1024px) {
+    gap: -0.444px;
+    
+  }
+  &__logo {
+    width: 122px;
+    height: 39px;
+  }
+
+  &__text-copyright {
+    color: white;
+    
+    @media (max-width: 1024px) {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+}

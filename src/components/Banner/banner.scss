@@ -1,0 +1,45 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  height: 223px;
+  margin-bottom: 38px;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    height: 111px;
+    margin-bottom: 27px;
+  }
+
+  &__img {
+    position: absolute;
+    object-fit: cover;
+
+    border-radius: 25px;
+    filter: brightness(0.45);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    @media (max-width: 1024px) {
+      border-radius: 10px;
+    }
+  }
+
+  &__txt {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+
+    @media (max-width: 1024px) {
+      font-size: 24px;
+      padding-left: 31px;
+      left: 0;
+    }
+
+  }
+}

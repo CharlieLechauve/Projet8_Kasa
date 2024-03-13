@@ -1,0 +1,153 @@
+.locations {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.description-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+
+    &__titletags {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 15px;
+
+            .titre-logement {
+                color: #FF6060;
+                font-size: 36px;
+                font-weight: 500;
+
+                @media (max-width: 1024px) {
+                    font-size: 18px;
+                }
+            }
+
+            .lieu-logement {
+                color: black;
+                font-size: 18px;
+                font-weight: 500;
+
+                @media (max-width: 1024px) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &__tags {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
+    }
+
+    &__proprietaire {
+
+        @media (max-width: 1024px) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        &__nom-prop {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+
+            .nom-proprietaire {
+                color: #FF6060;
+                text-align: right;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 142.6%;
+                white-space: pre-wrap;
+                width: 93px;
+            }
+
+            .photo-proprietaire {
+                border-radius: 50%;
+                width: 64px;
+                height: 64px;
+                object-fit: cover;
+
+                @media (max-width: 1024px) {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+
+        &__rate {
+            height: 36px;
+            width: 196px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 20px;
+
+            @media (max-width: 1024px) {
+                height: 18px;
+                width: 98px;
+            }
+
+            .star {
+                height: 36px;
+                color: white;
+
+                @media (max-width: 1024px) {
+                    height: 18px;
+                }
+            }
+
+            .star_red {
+                height: 24px;
+                color: #FF6060;
+
+                @media (max-width: 1024px) {
+                    height: 13px;
+                }
+            }
+
+
+        }
+    }
+}
+
+.description-content {
+    display: flex;
+    gap: 76px;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__description {
+        width: 60%;
+
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+
+    &__equipement {
+        width: 60%;
+
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+
+    }
+}
