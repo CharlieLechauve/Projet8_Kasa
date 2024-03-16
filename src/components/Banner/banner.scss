@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-
   height: 223px;
   margin-bottom: 38px;
   width: 100%;
@@ -16,7 +15,6 @@
   &__img {
     position: absolute;
     object-fit: cover;
-
     border-radius: 25px;
     filter: brightness(0.45);
     height: 100%;
